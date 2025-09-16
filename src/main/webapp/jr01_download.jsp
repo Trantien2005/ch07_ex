@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,7 @@
 
 <h1>Downloads</h1>
 
-<h2>Joe Rut - Genuine Wood Grained Finish</h2>
+<h2>Nhạc Trẻ - Pop Music</h2>
     
 <table>
 <tr>
@@ -17,16 +18,12 @@
     <th>Audio Format</th>
 </tr>
 <tr>
-    <td width="200"><b>Song title</b></td>
-    <td width="150"><b>Audio Format</b></td>
+    <td>Xin đừng lặng im</td>
+    <td><a href="${pageContext.request.contextPath}/musicStore/sound/${productCode}/Lang_im.mp3">MP3</a></td>
 </tr>
 <tr>
-    <td>Filter</td>
-    <td><a href="/musicStore/sound/${productCode}/filter.mp3">MP3</a></td>
-</tr>
-<tr>
-    <td>So Long Lazy Ray</td>
-    <td><a href="/musicStore/sound/${productCode}/so_long.mp3">MP3</a></td>
+    <td>Vợ người ta</td>
+    <td><a href="${pageContext.request.contextPath}/musicStore/sound/${productCode}/Vo-Nguoi-Ta.mp3">MP3</a></td>
 </tr>
 </table>
 

@@ -1,78 +1,222 @@
-body { 
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #e6f0ff;   
-    display: flex;
-    flex-direction: column;
+/* Import font Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* Global body style */
+body {
+    font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background-color: #e6f0ff;
+    padding: 40px 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+/* Headings */
 h1 {
-    color: #00529b;
-    border-bottom: 2px solid #00529b;
-    padding-bottom: 10px;
+    font-size: 2.5rem;
+    color: #0066cc;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 h2 {
-    color: #2a5d9f;
-    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0066cc;
+    text-align: center;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 700px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+/* Paragraphs */
+p {
+    font-size: 1.1rem;
     margin-bottom: 20px;
+    text-align: center;
+    color: #333;
 }
 
-th {
-    background-color: #0073e6;
-    color: white;
-    padding: 10px 15px;
+/* General section container */
+section {
+    background-color: #fff;
+    padding: 25px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ALBUM LIST BLOCK */
+.album-list-container {
+    background-color: #fff;
+    max-width: 360px;
+    width: 100%;
+    padding: 20px 25px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
-td {
-    border-top: 1px solid #ddd;
-    padding: 10px 15px;
+.album-list-container p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-a {
-    color: #0055aa;
-    text-decoration: none;
-    margin-right: 10px;
-    display: inline-block;
-    margin-top: 5px;
-}
-
-a:hover {
+.album-list-container a {
+    display: block;
+    margin: 8px 0;
+    color: #0057cc;
     text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
-input, button {
-    padding: 8px 10px;
-    margin: 5px 0 15px;
+.album-list-container a:hover {
+    color: #003d99;
+    text-decoration: none;
+}
+
+/* FORM STYLES */
+form {
+    background-color: #fff;
     width: 100%;
     max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 label {
     display: block;
-    font-weight: bold;
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #004d99;
+}
+
+/* TABLES (Downloads, Cookies...) */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #0066cc;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+td {
+    font-size: 1rem;
+}
+
+/* COOKIE INFO TEXT */
+#cookies-info {
+    font-size: 1rem;
+    max-width: 350px;
+    margin-left: 20px;
+    text-align: left;
+    color: #333;
+}
+
+/* LINK ROW (e.g. View list of albums / Delete cookies) */
+.links-row {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.links-row a {
+    color: #6a2c91;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.links-row a:hover {
+    color: #3b0b6f;
+}
+
+/* UTILITIES */
+.pad_top {
     margin-top: 10px;
 }
 
-input[type="submit"],
-button {
-    background-color: #00529b;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: auto;
+.margin_left {
+    margin-left: 0;
 }
 
-input[type="submit"]:hover,
-button:hover {
-    background-color: #003f7f;
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #cookies-info {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+    }
 }

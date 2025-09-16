@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,7 @@
 
 <h1>Downloads</h1>
 
-<h2>86 (the band) - True Life Songs and Pictures</h2>
+<h2>Nhạc Tự Hào Dân Tộc</h2>
     
 <table>
 <tr>
@@ -17,12 +18,12 @@
     <th>Audio Format</th>
 </tr>
 <tr>
-    <td>You Are a Star</td>
-    <td><a href="/musicStore/sound/${productCode}/star.mp3">MP3</a></td>
+    <td>Vinh Quang Đang Chờ Ta</td>
+    <td><a href="${pageContext.request.contextPath}/musicStore/sound/${productCode}/A80-1.mp3">MP3</a></td>
 </tr>
 <tr>
-    <td>Don't Make No Difference</td>
-    <td><a href="/musicStore/sound/${productCode}/no_difference.mp3">MP3</a></td>
+    <td>Lên Đàng</td>
+    <td><a href="${pageContext.request.contextPath}/musicStore/sound/${productCode}/A80-2.mp3">MP3</a></td>
 </tr>
 </table>
 

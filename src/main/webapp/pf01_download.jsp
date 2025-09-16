@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,7 @@
 
 <h1>Downloads</h1>
 
-<h2>Paddlefoot - The First CD</h2>
+<h2>Nhạc Trữ Tình</h2>
     
 <table>
 <tr>
@@ -17,12 +18,12 @@
     <th>Audio Format</th>
 </tr>
 <tr>
-    <td>64 Corvair</td>
-    <td><a href="/musicStore/sound/${productCode}/corvair.mp3">MP3</a></td>
+    <td>Hoa Bằng Lăng</td>
+    <td><a href="${pageContext.request.contextPath}/musicStore/sound/${productCode}/TT1.mp3">MP3</a></td>
 </tr>
 <tr>
-    <td>Whiskey Before Breakfast</td>
-    <td><a href="/musicStore/sound/${productCode}/whiskey.mp3">MP3</a></td>
+    <td>Duyên Phận</td>
+    <td><a href="${pageContext.request.contextPath}/musicStore/sound/${productCode}/TT2.mp3">MP3</a></td>
 </tr>
 </table>
 
